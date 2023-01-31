@@ -1,0 +1,14 @@
+# The EBS plug-in can be installed with the following command:
+Puplugins to install rexray 
+docker plugin install rexray/ebs \
+  EBS_ACCESSKEY=*****\
+  EBS_SECRETKEY=*******
+=======> docker volume -d create rexray/ebs volume1
+
+
+# The EFS plug-in can be installed with the following command:
+docker plugin install rexray/efs \
+  EFS_ACCESSKEY=abc \
+  EFS_SECRETKEY=123 \
+  EFS_SECURITYGROUPS="sg-123 sg-456" \
+  EFS_TAG=rexray
